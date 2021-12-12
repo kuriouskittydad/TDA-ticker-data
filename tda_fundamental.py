@@ -33,8 +33,6 @@ payload = {'apikey':tda,'symbol': 'MSFT','projection':'fundamental'}
 X = T.helper.request_get(url, payload, parse_json= True)
 X = pd.DataFrame(X[0]['MSFT'])
 df = X['fundamental'].reset_index(drop = False)
-# print(df)
-
 
 # to get account access to make trades you need the encryption password
 
